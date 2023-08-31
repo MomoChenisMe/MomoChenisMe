@@ -7,8 +7,7 @@
 ## Skill
 [![My Skills](https://skillicons.dev/icons?i=ts,js,html,css,tailwind,angular,dotnet,azure,docker,jenkins,kubernetes,linux&theme=dark&perline=6)](https://skillicons.dev)
 
-#
-![MomoChenisMe's GitHub stats](https://github-readme-stats.vercel.app/api?username=MomoChenisMe&theme=dracula)
+
 <!--
 **MomoChenisMe/MomoChenisMe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
