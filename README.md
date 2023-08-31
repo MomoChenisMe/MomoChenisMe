@@ -1,5 +1,11 @@
-### Hi there 👋
+# Hi My Name is MomoChenisMe 👋
 
+## I’m a R & D Engineer.
+- 🌱 I have a passion for self-learning.
+- ⚡ I can accept failure. But I can’t accept not trying.
+
+## Skill
+[![My Skills](https://skillicons.dev/icons?i=ts,js,html,css,tailwind,angular,dotnet,azure,docker,jenkins,kubernetes,linux&theme=dark&perline=6)](https://skillicons.dev)
 <!--
 **MomoChenisMe/MomoChenisMe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,3 +20,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
