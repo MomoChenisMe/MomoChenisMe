@@ -1,0 +1,47 @@
+name: Update Bomberman contribution graph
+
+on:
+  schedule:
+    - cron: '23 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bomberman.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bomberman-contribution-graph
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@v4
+
+      - name: Generate Bomberman animations
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: bomberman
+
+      - name: Save generated animations
+        run: |
+          test -s dist/bomberman-contribution-graph.svg
+          test -s dist/bomberman-contribution-graph-dark.svg
+          mkdir -p assets
+          cp dist/bomberman-contribution-graph.svg assets/
+          cp dist/bomberman-contribution-graph-dark.svg assets/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/bomberman-contribution-graph.svg assets/bomberman-contribution-graph-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Bomberman contribution animations"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
