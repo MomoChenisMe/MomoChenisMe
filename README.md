@@ -23,5 +23,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## Certificate
-[![Google Gemini Certified Educator](https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/160613861?key=a659839531a1e1f5a3db46499f5b2e3e8ae06e5879367fd404b1dc1d5df7f32c)]
+## Bomberman 💣
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/bomberman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/bomberman-contribution-graph.svg">
+  <img alt="Bomberman animation of my GitHub contribution graph" src="assets/bomberman-contribution-graph.svg">
+</picture>
